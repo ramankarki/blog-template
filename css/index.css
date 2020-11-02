@@ -1,0 +1,253 @@
+@font-face {
+  font-family: Cormier;
+  src: url("Webfonts/Cormier Regular.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  max-width: 1366px;
+  margin: auto;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.main-wrapper {
+  position: relative;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.row > * {
+  grid-column: 12 span;
+}
+
+header {
+  position: relative;
+  top: 1rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-family: cormier;
+  color: #581B98;
+}
+
+.hamburgur-btn {
+  display: block;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 2%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  width: 40px;
+}
+
+.hamburgur-btn img {
+  width: 100%;
+  height: auto;
+}
+
+.aside-right {
+  position: absolute;
+  right: 0;
+  top: 59px;
+  width: 0;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  z-index: 98;
+  -webkit-transition: width 600ms cubic-bezier(0.02, 1.03, 0, 0.97);
+  transition: width 600ms cubic-bezier(0.02, 1.03, 0, 0.97);
+}
+
+.aside-transition {
+  width: 300px;
+  overflow-y: auto;
+}
+
+.aside-wrapper {
+  max-width: 200px;
+  margin: auto;
+}
+
+.login-row {
+  margin: 1rem auto 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #A7A7A7;
+  fill: #A7A7A7;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-row .login {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.login-row .human-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+form {
+  position: relative;
+}
+
+#search-input {
+  width: 100%;
+  font-size: 14px;
+  padding: .5rem 3rem .5rem 1.5rem;
+  background-color: #F3F3F3;
+  border: none;
+  border-radius: 100rem;
+}
+
+#search-input::-webkit-input-placeholder {
+  color: #A7A7A7;
+}
+
+#search-input:-ms-input-placeholder {
+  color: #A7A7A7;
+}
+
+#search-input::-ms-input-placeholder {
+  color: #A7A7A7;
+}
+
+#search-input::placeholder {
+  color: #A7A7A7;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 1rem;
+  width: 20px;
+  fill: #581B98;
+  cursor: pointer;
+}
+
+.page-links a {
+  display: block;
+  color: #A7A7A7;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 1.2rem 0 1.2rem 1.5rem;
+}
+
+.page-links .active {
+  color: #581B98;
+  font-weight: bold;
+}
+
+.page-links hr {
+  background-color: #F3F3F3;
+  height: 1px;
+  border: none;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-links img {
+  display: block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.social-links #s1 {
+  width: 60px;
+}
+
+.social-links #s2 {
+  width: 30px;
+}
+
+.social-links #s3 {
+  width: 60px;
+}
+
+@media (min-width: 576px) {
+  .hamburgur-btn {
+    width: 50px;
+    right: 4%;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .hamburgur-btn {
+    display: none;
+  }
+  .main-left {
+    grid-column: span 9;
+    height: 1000px;
+  }
+  .aside-right {
+    position: fixed;
+    top: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 300px;
+    grid-column: span 3;
+  }
+  .page-links a::after {
+    content: "";
+    background-color: #A7A7A7;
+    display: block;
+    width: 0px;
+    height: 2px;
+    -webkit-transition: width 600ms cubic-bezier(0.02, 1.03, 0, 0.97);
+    transition: width 600ms cubic-bezier(0.02, 1.03, 0, 0.97);
+    margin-top: 5px;
+  }
+  .page-links a:hover::after {
+    width: 60px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
