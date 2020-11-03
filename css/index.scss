@@ -15,7 +15,6 @@ $pink: #F3558E;
 $green: #3CA855;
 $black: #444444;
 
-
 @font-face {
     font-family: Cormier;
     src: url("Webfonts/Cormier Regular.woff");
@@ -35,10 +34,6 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-.main-wrapper {
-    position: relative;
-}
-
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -48,198 +43,18 @@ body {
     grid-column: 12 span;
 }
 
-header {
-    position: relative;
-    top: 1rem;
-}
-
-.heading {
-    text-align: center;
-    font-size: $text-3;
-    font-family: cormier;
-    color: $purple-1;
-}
-
-.hamburgur-btn {
-    display: block;
-    z-index: 99;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 2%;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    width: 40px;
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.aside-right {
-    position: absolute;
-    right: 0;
-    top: 59px;
-    width: 0;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-    z-index: 98;
-    transition: width 600ms cubic-bezier(.02,1.03,0,.97);
-}
-
-.aside-transition {
-    width: 300px;
-    overflow-y: auto;
-}
-
-.aside-wrapper {
-    max-width: 200px;
-    margin: auto;
-}
-
-.login-row {
-    margin: 1rem auto 2rem auto;
-    display: flex;
-    color: $grey-1;
-    fill: $grey-1;
-    justify-content: space-between;
-
-    .login {
-        font-weight: bold;
-        text-decoration: underline;
-        font-size: $text-4;
-        margin-left: 1.5rem;
-        cursor: pointer;
-    }
-
-    .human-icon {
-        width: 20px;
-        height: auto;
-        margin-right: 1rem;
-        cursor: pointer;
-    }
-}
-
-form {
-    position: relative;
-}
-
-#search-input {
-    width: 100%;
-    font-size: $text-6;
-    padding: .5rem 3rem .5rem 1.5rem;
-    background-color: $grey-2;
-    border: none;
-    border-radius: 100rem;
-}
-
-#search-input::placeholder {
-    color: $grey-1;
-}
-
-.search-icon {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 1rem;
-    width: 20px;
-    fill: $purple-1;
-    cursor: pointer;
-}
-
-.page-links {
-    a {
-        display: block;
-        color: $grey-1;
-        text-decoration: none;
-        font-size: $text-6;
-        margin: 1.2rem 0 1.2rem 1.5rem;
-    }
-
-    .active {
-        color: $purple-1;
-        font-weight: bold;
-    }
-
-    hr {
-        background-color: $grey-2;
-        height: 1px;
-        border: none;
-    }
-}
-
-.social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-        display: block;
-        margin: 5px;
-        cursor: pointer;
-    }
-
-    #s1 {
-        width: 60px;
-    }
-    #s2 {
-        width: 30px;
-    }
-    #s3 {
-        width: 60px;
-    }
-}
-
 @media (min-width: 576px) {
-    .hamburgur-btn {
-        width: 50px;
-        right: 4%;
-    }
+
 }
 
 @media (min-width: 768px) {
-    .heading {
-        font-size: $text-2
-    }
+
+}
+
+@media (min-width: 992px) {
+
 }
 
 @media (min-width: 1200px) {
-
-    .heading {
-        font-size: $text-1;
-    }
-
-    .hamburgur-btn {
-        display: none;
-    }
-
-    .main-left {
-        grid-column: span 9;
-        height: 1000px;
-    }
     
-    .aside-right {
-        position: fixed;
-        top: 30px;
-        box-shadow: none;
-        width: 300px;
-        grid-column: span 3;
-    }
-
-    .page-links {
-        a::after {
-            content: "";
-            background-color: $grey-1;
-            display: block;
-            width: 0px;
-            height: 2px;
-            transition: width 600ms cubic-bezier(.02,1.03,0,.97);
-            margin-top: 5px;
-        }
-
-        a:hover::after {
-            width: 60px;
-        }
-    }
 }
