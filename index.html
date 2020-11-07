@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav-container.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -25,22 +26,22 @@
                         <img src="image/hamburgur-btn.svg" alt="">
                     </button>
                 </header>
-                <div class="carousel-container">
-                    
-                </div>
 
-
-            </div>
+            </div> <!-- main content container end -->
         </div>
 
 
-        <div class="right-aside">
+        <div class="fixed-right-aside">
             <!-- aside nav links and search buttons -->
             <div class="aside-content">
                 <!-- all content is here -->
+
+                <!-- exit button to close side nav page -->
                 <div class="exit">
-                    <img src="image/cross.svg" alt="">
+                    <img src="image/exit.svg" alt="">
                 </div>
+
+                <!-- login button and human icon -->
                 <div class="login-btn">
                     <p class="login">Login</p>
                     <svg class="login-icon" width="500" height="500" viewBox="0 0 132.29166 132.29167" version="1.1"
@@ -55,6 +56,8 @@
                             d="M 4.7641439,113.92029 A 61.134373,57.8218 0 0 1 65.181733,63.289997 61.134373,57.8218 0 0 1 126.02151,113.466 l -60.597613,7.64534 z" />
                     </svg>
                 </div>
+
+                <!-- input search field and search icon -->
                 <form action="">
                     <input type="text" name="" class="search-field" placeholder="Search">
                     <button class="submit" type="submit"><svg enable-background="new 0 0 32 32" id="Editable-line"
@@ -66,24 +69,29 @@
                                 stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="27" x2="20.366"
                                 y1="27" y2="20.366" /></svg></button>
                 </form>
+
+                <!-- navigation buttons -->
                 <div class="links">
+                    <!-- navigation page links -->
                     <div class="nav-links">
                         <a class="nav-item" href="#">About</a>
                         <a class="nav-item" href="#">Contact</a>
                         <hr class="nav-break">
                         <a class="nav-item" href="#">Tech</a>
                         <a class="nav-item" href="#">Fashion</a>
-                        <a class="nav-item active" href="#">People</a>
+                        <a class="nav-item active-nav" href="#">People</a>
                         <a class="nav-item" href="#">Trips</a>
                         <a class="nav-item" href="#">Nature</a>
                     </div>
+
+                    <!-- social icons -->
                     <div class="social-links">
                         <img src="image/facebook.svg" alt="">
                         <img src="image/twitter.svg" alt="">
                         <img src="image/instagram.svg" alt="">
                     </div>
                 </div>
-            </div>
+            </div> <!-- aside content container end -->
         </div>
         <!-- end main two column -->
     </div>
