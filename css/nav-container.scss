@@ -37,10 +37,9 @@
 .login-btn {
     margin-top: $normal-padding;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 0 .8rem;
 }
 
 // login button
@@ -48,6 +47,7 @@
     color: $primary-color-light;
     font-weight: bold;
     text-decoration: underline;
+    margin-right: $normal-padding;
 }
 
 // login icon
@@ -153,6 +153,10 @@ form {
         width: $nav-width;
         position: fixed;
         box-shadow: none;
+    }
+
+    .aside-content {
+        padding: $medium-padding $medium-padding + $normal-padding;
     }
 
     .fixed-right-aside::-webkit-scrollbar {

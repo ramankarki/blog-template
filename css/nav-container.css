@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Cormier";
-  src: url(Webfonts/Cormier-Regular.woff) format("woff");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -83,9 +78,19 @@ header {
 }
 
 .heading {
-  font-family: "Cormier";
+  font-family: 'Teko', sans-serif;
   font-size: 1.8rem;
   color: #581B98;
+}
+
+.heading::before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), to(#F3558E));
+  background: linear-gradient(90deg, white 50%, #F3558E);
+  margin-left: auto;
 }
 
 .logo {
@@ -158,20 +163,20 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  padding: 0 .8rem;
 }
 
 .login {
   color: #7833c2;
   font-weight: bold;
   text-decoration: underline;
+  margin-right: 1rem;
 }
 
 .login-icon {
@@ -290,10 +295,13 @@ form {
 
 @media (min-width: 1200px) {
   .fixed-right-aside {
-    width: 23%;
+    width: 25%;
     position: fixed;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .aside-content {
+    padding: 2rem 3rem;
   }
   .fixed-right-aside::-webkit-scrollbar {
     display: none;
