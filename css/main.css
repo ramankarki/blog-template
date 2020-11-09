@@ -52,48 +52,74 @@ img {
   grid-column: 12 span;
 }
 
+.wrapper-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .left-main {
   width: 100%;
 }
 
 header {
-  position: relative;
-  margin-top: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 98;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heading {
   font-family: "Cormier";
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.8rem;
   color: #581B98;
 }
 
-.hamburgur-btn {
-  display: block;
-  background-color: rgba(255, 255, 255, 0);
+.logo {
+  width: 30px;
+}
+
+.hamburgur {
   border: none;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 5%;
+  background-color: rgba(255, 255, 255, 0);
+  visibility: visible;
 }
 
 @media (min-width: 768px) {
   .heading {
     font-size: 3rem;
   }
+  .logo {
+    width: 50px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .heading {
-    font-size: 4rem;
+  header {
+    position: static;
+    margin-bottom: 2rem;
   }
-  .hamburgur-btn {
-    display: none;
+  .header-content {
+    margin-top: 2rem;
+  }
+  .hamburgur {
+    visibility: hidden;
   }
   .left-main {
-    width: 76%;
+    width: 75%;
   }
 }
 /*# sourceMappingURL=main.css.map */
