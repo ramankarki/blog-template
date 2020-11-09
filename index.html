@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Template | Home</title>
     <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/nav-container.css">
     <link rel="stylesheet" href="css/main.css">
+    <title>Blog Template | Home</title>
 </head>
 
 <body>
@@ -21,11 +23,29 @@
             <div class="main-content">
                 <!-- all content is here -->
                 <header>
-                    <h1 class="heading">Blog Template</h1>
-                    <button class="hamburgur-btn">
-                        <img src="image/hamburgur-btn.svg" alt="">
-                    </button>
+                    <div class="wrapper-90 header-content">
+                        <div class="logo">
+                            <img src="image/favicon.svg" alt="">
+                        </div>
+                        <h1 class="heading">Blog Template</h1>
+                        <button class="hamburgur">
+                            <img src="image/hamburgur-btn.svg" alt="">
+                        </button>
+                    </div>
                 </header>
+
+                <!-- welcome image for small screen alternate for carousel -->
+                <div class="poster welcome-poster">
+                    <img src="image/slide-0.svg" alt="">
+                    <div class="people-msg">
+                        <img class="people-img" src="image/carousel-content-1.jpg" alt="">
+                        <p class="people-text">Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="poster-btn-name">
+                        <button class="people-btn poster-btn">People</button>
+                        <p class="people-name">20 October 2020  |  John Doe</p>
+                    </div>
+                </div>
 
             </div> <!-- main content container end -->
         </div>
@@ -95,7 +115,7 @@
         </div>
         <!-- end main two column -->
     </div>
-    <script src="js/index.js"></script>
+    <script src="js/side-nav.js"></script>
 </body>
 
 </html>
