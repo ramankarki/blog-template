@@ -54,6 +54,7 @@
         font-size: $card-title;
         color: $black;
         margin: $normal-padding 0;
+        line-height: $line-height;
     }
 
     .card-date-name {
@@ -103,9 +104,17 @@
         margin-top: $normal-padding;
         font-size: $nav-links;
         color: $grey-dark;
+        line-height: $line-height;
     }
 }
 
+@media (min-width: 576px) {
+    .trip-poster {
+        .poster-title {
+            font-size: $big-heading-sm;
+        }
+    }
+}
 
 @media (min-width: 992px) {
     .trip-poster {
