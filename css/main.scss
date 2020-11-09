@@ -1,6 +1,6 @@
 // font sizes
 $big-heading: 4rem;
-$big-heading-sm: 3rem;
+$big-heading-sm: 2.6rem;
 $medium: 1.8rem;
 $card-title: 1.2rem;
 $normal-text: 1rem;
@@ -174,17 +174,28 @@ header {
     color: $primary-color;
 }
 
-.heading::before {
+.heading::before,
+.heading::after {
     content: "";
     display: block;
-    width: 65%;
     height: 2px;
+}
+
+.heading::before {
+    width: 65%;
     background: linear-gradient(90deg, white 50%, $pink);
     margin-left: auto;
 }
 
+.heading::after {
+    width: 30%;
+    background: linear-gradient(90deg, $pink, white 50%);
+    margin-right: auto;
+    margin-top: .5rem;
+}
+
 .logo {
-    width: 30px;
+    width: 20px;
     cursor: pointer;
 }
 
@@ -194,9 +205,9 @@ header {
     visibility: visible;
 }
 
-@media (min-width: 768px) {    
+@media (min-width: 576px) {
     .logo {
-        width: 50px;
+        width: 30px;
     }
 }
 

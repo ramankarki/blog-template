@@ -72,18 +72,30 @@ header {
   color: #581B98;
 }
 
-.heading::before {
+.heading::before,
+.heading::after {
   content: "";
   display: block;
-  width: 65%;
   height: 2px;
+}
+
+.heading::before {
+  width: 65%;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), to(#F3558E));
   background: linear-gradient(90deg, white 50%, #F3558E);
   margin-left: auto;
 }
 
+.heading::after {
+  width: 30%;
+  background: -webkit-gradient(linear, left top, right top, from(#F3558E), color-stop(50%, white));
+  background: linear-gradient(90deg, #F3558E, white 50%);
+  margin-right: auto;
+  margin-top: .5rem;
+}
+
 .logo {
-  width: 30px;
+  width: 20px;
   cursor: pointer;
 }
 
@@ -93,15 +105,15 @@ header {
   visibility: visible;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .logo {
-    width: 50px;
+    width: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .heading {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   header {
     position: static;
