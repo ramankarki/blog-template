@@ -23,7 +23,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="37.1875"
+     inkscape:zoom="35.846885"
      inkscape:cx="4.9747899"
      inkscape:cy="8"
      inkscape:document-units="px"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,25 +57,25 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:8.00173px;line-height:1.25;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';fill:#581b98;fill-opacity:1;stroke-width:0.200154;stroke-miterlimit:4;stroke-dasharray:none;"
-       x="-0.091560081"
-       y="5.7172456"
+       style="font-size:6.3717px;line-height:1.25;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';fill:#581b98;fill-opacity:1;stroke-width:0.159381;stroke-miterlimit:4;stroke-dasharray:none"
+       x="0.11818597"
+       y="5.1467347"
        id="text9"><tspan
          sodipodi:role="line"
          id="tspan7"
-         x="-0.091560081"
-         y="5.7172456"
-         style="fill:#581b98;fill-opacity:1;stroke-width:0.200154;stroke-miterlimit:4;stroke-dasharray:none;">B</tspan></text>
+         x="0.11818597"
+         y="5.1467347"
+         style="fill:#581b98;fill-opacity:1;stroke-width:0.159381;stroke-miterlimit:4;stroke-dasharray:none">B</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;line-height:1.25;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123043;fill:#f3558e;fill-opacity:1;"
-       x="3.861115"
-       y="2.6942956"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;line-height:1.25;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f3558e;fill-opacity:1;stroke-width:0.123043"
+       x="3.8000922"
+       y="2.9892395"
        id="text13"><tspan
          sodipodi:role="line"
          id="tspan11"
-         x="3.861115"
-         y="2.6942956"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123043;fill:#f3558e;fill-opacity:1;">T</tspan></text>
+         x="3.8000922"
+         y="2.9892395"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f3558e;fill-opacity:1;stroke-width:0.123043">T</tspan></text>
   </g>
 </svg>
