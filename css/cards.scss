@@ -1,0 +1,68 @@
+@import "main";
+
+.two-column-card {
+    background-color: $grey-light;
+}
+
+.two-column-card-container {
+    padding: $large-padding 0;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: $large-padding;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    grid-column: 12 span;
+
+    .card-img {
+        img {
+            border-radius: .3rem;
+        }
+        position: relative;
+    }
+
+    .card-indicator-btn {
+        @include card-indicator-btn($pink, $grey-light);
+        position: absolute;
+        bottom: $large-padding;
+        left: 0;
+    }
+    
+    .tech-btn {
+        @include card-indicator-btn($black, $grey-light);
+    }
+
+    .card-title {
+        font-size: $card-title;
+        color: $black;
+        margin: $normal-padding 0;
+    }
+
+    .card-date-name {
+        color: $grey-dark;
+        font-size: $date-names;
+    }
+}
+
+@media (min-width: 768px) {
+    .two-column-card-container {
+        grid-gap: 0 $large-padding;
+        padding: $large-padding + $normal-padding $normal-padding;
+    }
+
+    .card {
+        grid-column: 6 span;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 992px) {
+    .two-column-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
