@@ -1,0 +1,16 @@
+@import "main";
+
+// alternate for carousel slider for small screen < 576px
+.welcome-poster {
+    @include poster(100%, 350px, 50px);
+}
+
+
+// carousel for medium and large screen
+@media (min-width: 576px) {
+    .welcome-poster {
+        display: none;
+    }
+}
+
+

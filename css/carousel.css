@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Cormier";
+  src: url(Webfonts/Cormier-Regular.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #F3F3F3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #A7A7A7;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.row > * {
+  grid-column: 12 span;
+}
+
+.wrapper-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.left-main {
+  width: 100%;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 98;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading {
+  font-family: "Cormier";
+  font-size: 1.8rem;
+  color: #581B98;
+}
+
+.logo {
+  width: 30px;
+}
+
+.hamburgur {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .logo {
+    width: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    position: static;
+    margin-bottom: 2rem;
+  }
+  .header-content {
+    margin-top: 2rem;
+  }
+  .hamburgur {
+    visibility: hidden;
+  }
+  .left-main {
+    width: 75%;
+  }
+}
+
+.welcome-poster {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.welcome-poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.welcome-poster .people-msg {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.welcome-poster .people-img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: auto;
+  border-radius: 100rem;
+}
+
+.welcome-poster .people-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #F3F3F3;
+  margin-top: 1rem;
+}
+
+.welcome-poster .poster-btn-name {
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-poster .poster-btn {
+  font-size: 14px;
+  background-color: #581B98;
+  border: none;
+  color: #F3F3F3;
+  padding: 0.5rem 1rem;
+  border-radius: 0 .5rem .5rem 0;
+  opacity: .8;
+}
+
+.welcome-poster .people-name {
+  font-size: 12px;
+  color: #A7A7A7;
+}
+
+@media (min-width: 576px) {
+  .welcome-poster {
+    display: none;
+  }
+}
+/*# sourceMappingURL=carousel.css.map */
