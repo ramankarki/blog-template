@@ -19,10 +19,16 @@
     grid-column: 12 span;
 
     .card-img {
-        img {
-            border-radius: .3rem;
-        }
+        height: 200px;
         position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: .3rem;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 
     .card-indicator-btn {
@@ -34,6 +40,14 @@
     
     .tech-btn {
         @include card-indicator-btn($black, $grey-light);
+    }
+
+    .fashion-btn {
+        @include card-indicator-btn($primary-color, $grey-light);
+    }
+
+    .nature-btn {
+        @include card-indicator-btn($green, $grey-light);
     }
 
     .card-title {
@@ -57,8 +71,13 @@
     .card {
         grid-column: 6 span;
         cursor: pointer;
+
+        .card-img {
+            height: 250px;
+        }
     }
 }
+
 
 @media (min-width: 992px) {
     .two-column-card {
@@ -66,3 +85,69 @@
         margin: 0 auto;
     }
 }
+
+.trip-poster {
+    @include poster(100%, 420px, 0, $large-padding);
+    text-align: center;
+
+    .poster-btn {
+        @include card-indicator-btn($pink, $grey-light);
+    }
+
+    .poster-title {
+        font-size: $medium;
+        color: $grey-light;
+    }
+
+    .poster-sub-title {
+        margin-top: $normal-padding;
+        font-size: $nav-links;
+        color: $grey-dark;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .trip-poster {
+        @include poster(100%, 500px, 0, $large-padding);
+        width: 90%;
+        margin: 0 auto;
+
+        .poster-btn {
+            @include card-indicator-btn($pink, $grey-light);
+        }
+    }
+}
+
+
+.three-column-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: $large-padding 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: $large-padding;
+
+    .card {
+        grid-column: 12 span;
+    }
+}
+
+@media (min-width: 576px) {
+    .three-column-card {
+        grid-gap: $large-padding  $medium-padding;
+
+        .card {
+            grid-column: 6 span;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .three-column-card {
+        .card {
+            grid-column: 4 span;
+        }
+    }
+}
+

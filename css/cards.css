@@ -72,18 +72,30 @@ header {
   color: #581B98;
 }
 
-.heading::before {
+.heading::before,
+.heading::after {
   content: "";
   display: block;
-  width: 65%;
   height: 2px;
+}
+
+.heading::before {
+  width: 65%;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), to(#F3558E));
   background: linear-gradient(90deg, white 50%, #F3558E);
   margin-left: auto;
 }
 
+.heading::after {
+  width: 30%;
+  background: -webkit-gradient(linear, left top, right top, from(#F3558E), color-stop(50%, white));
+  background: linear-gradient(90deg, #F3558E, white 50%);
+  margin-right: auto;
+  margin-top: .5rem;
+}
+
 .logo {
-  width: 30px;
+  width: 20px;
   cursor: pointer;
 }
 
@@ -93,15 +105,15 @@ header {
   visibility: visible;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .logo {
-    width: 50px;
+    width: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .heading {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   header {
     position: static;
@@ -140,11 +152,18 @@ header {
 }
 
 .card .card-img {
+  height: 200px;
   position: relative;
 }
 
 .card .card-img img {
+  width: 100%;
+  height: 100%;
   border-radius: .3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .card .card-indicator-btn {
@@ -163,6 +182,26 @@ header {
 .card .tech-btn {
   font-size: 14px;
   background-color: #444444;
+  border: none;
+  color: #F3F3F3;
+  padding: 0.5rem 1rem;
+  border-radius: 0 .5rem .5rem 0;
+  opacity: .8;
+}
+
+.card .fashion-btn {
+  font-size: 14px;
+  background-color: #581B98;
+  border: none;
+  color: #F3F3F3;
+  padding: 0.5rem 1rem;
+  border-radius: 0 .5rem .5rem 0;
+  opacity: .8;
+}
+
+.card .nature-btn {
+  font-size: 14px;
+  background-color: #3CA855;
   border: none;
   color: #F3F3F3;
   padding: 0.5rem 1rem;
@@ -190,12 +229,219 @@ header {
     grid-column: 6 span;
     cursor: pointer;
   }
+  .card .card-img {
+    height: 250px;
+  }
 }
 
 @media (min-width: 992px) {
   .two-column-card {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+.trip-poster {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  text-align: center;
+}
+
+.trip-poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.trip-poster .people-msg {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.trip-poster .people-img {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: auto;
+  border-radius: 100rem;
+}
+
+.trip-poster .people-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #F3F3F3;
+  margin-top: 1rem;
+}
+
+.trip-poster .poster-btn-name {
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 3rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trip-poster .poster-btn {
+  font-size: 14px;
+  background-color: #581B98;
+  border: none;
+  color: #F3F3F3;
+  padding: 0.5rem 1rem;
+  border-radius: 0 .5rem .5rem 0;
+  opacity: .8;
+}
+
+.trip-poster .people-name {
+  font-size: 12px;
+  color: #A7A7A7;
+}
+
+.trip-poster .poster-btn {
+  font-size: 14px;
+  background-color: #F3558E;
+  border: none;
+  color: #F3F3F3;
+  padding: 0.5rem 1rem;
+  border-radius: 0 .5rem .5rem 0;
+  opacity: .8;
+}
+
+.trip-poster .poster-title {
+  font-size: 1.8rem;
+  color: #F3F3F3;
+}
+
+.trip-poster .poster-sub-title {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #A7A7A7;
+}
+
+@media (min-width: 992px) {
+  .trip-poster {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .trip-poster img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .trip-poster .people-msg {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .trip-poster .people-img {
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: auto;
+    border-radius: 100rem;
+  }
+  .trip-poster .people-text {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #F3F3F3;
+    margin-top: 1rem;
+  }
+  .trip-poster .poster-btn-name {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 3rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trip-poster .poster-btn {
+    font-size: 14px;
+    background-color: #581B98;
+    border: none;
+    color: #F3F3F3;
+    padding: 0.5rem 1rem;
+    border-radius: 0 .5rem .5rem 0;
+    opacity: .8;
+  }
+  .trip-poster .people-name {
+    font-size: 12px;
+    color: #A7A7A7;
+  }
+  .trip-poster .poster-btn {
+    font-size: 14px;
+    background-color: #F3558E;
+    border: none;
+    color: #F3F3F3;
+    padding: 0.5rem 1rem;
+    border-radius: 0 .5rem .5rem 0;
+    opacity: .8;
+  }
+}
+
+.three-column-card {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 3rem;
+}
+
+.three-column-card .card {
+  grid-column: 12 span;
+}
+
+@media (min-width: 576px) {
+  .three-column-card {
+    grid-gap: 3rem 2rem;
+  }
+  .three-column-card .card {
+    grid-column: 6 span;
+  }
+}
+
+@media (min-width: 992px) {
+  .three-column-card .card {
+    grid-column: 4 span;
   }
 }
 /*# sourceMappingURL=cards.css.map */
