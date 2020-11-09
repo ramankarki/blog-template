@@ -5,8 +5,8 @@
 .fixed-right-aside {
     background-color: white;
     z-index: 99;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     top: 0;
     right: 0;
     overflow-y: auto;
@@ -30,11 +30,12 @@
 .exit {
     display: block;
     width: 30px;
-    margin: $normal-padding .6rem $medium-padding auto;
+    margin: 0 .6rem $medium-padding auto;
 }
 
 // login button and icon container
 .login-btn {
+    margin-top: $normal-padding;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,4 +163,3 @@ form {
         display: none;
     }
 }
-
