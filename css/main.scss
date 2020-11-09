@@ -17,6 +17,7 @@ $green: #3CA855;
 $black: #444444;
 
 // common padding or margin
+$large-padding: 3rem;
 $medium-padding: 2rem;
 $normal-padding: 1rem;
 
@@ -24,7 +25,7 @@ $normal-padding: 1rem;
 $main-width: 75%;
 
 // nav aside width for big screen
-$nav-width: 23%;
+$nav-width: 25%;
 
 // common properties
 @mixin nav-transition {
@@ -106,12 +107,6 @@ $nav-width: 23%;
     }
 }
 
-// font for big heading
-@font-face {
-    font-family: "Cormier";
-    src: url(Webfonts/Cormier-Regular.woff) format("woff");
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -149,15 +144,6 @@ img {
     -webkit-user-drag: none;
 }
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-.row > * {
-    grid-column: 12 span;
-}
-
 .wrapper-90 {
     width: 90%;
     margin: 0 auto;
@@ -183,13 +169,23 @@ header {
 
 // big "Blog Template" heading
 .heading {
-    font-family: "Cormier";
+    font-family: 'Teko', sans-serif;
     font-size: $medium;
     color: $primary-color;
 }
 
+.heading::before {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 2px;
+    background: linear-gradient(90deg, white 50%, $pink);
+    margin-left: auto;
+}
+
 .logo {
     width: 30px;
+    cursor: pointer;
 }
 
 .hamburgur {
@@ -198,17 +194,17 @@ header {
     visibility: visible;
 }
 
-@media (min-width: 768px) {
-    .heading {
-        font-size: $big-heading-sm;
-    }
-
+@media (min-width: 768px) {    
     .logo {
         width: 50px;
     }
 }
 
 @media (min-width: 1200px) {
+    .heading {
+        font-size: $big-heading-sm;
+    }
+
     header {
         position: static;
         margin-bottom: $medium-padding;

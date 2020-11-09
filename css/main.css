@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Cormier";
-  src: url(Webfonts/Cormier-Regular.woff) format("woff");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -41,17 +36,6 @@ img {
   -webkit-user-drag: none;
 }
 
-.row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-}
-
-.row > * {
-  grid-column: 12 span;
-}
-
 .wrapper-90 {
   width: 90%;
   margin: 0 auto;
@@ -83,13 +67,24 @@ header {
 }
 
 .heading {
-  font-family: "Cormier";
+  font-family: 'Teko', sans-serif;
   font-size: 1.8rem;
   color: #581B98;
 }
 
+.heading::before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), to(#F3558E));
+  background: linear-gradient(90deg, white 50%, #F3558E);
+  margin-left: auto;
+}
+
 .logo {
   width: 30px;
+  cursor: pointer;
 }
 
 .hamburgur {
@@ -99,15 +94,15 @@ header {
 }
 
 @media (min-width: 768px) {
-  .heading {
-    font-size: 3rem;
-  }
   .logo {
     width: 50px;
   }
 }
 
 @media (min-width: 1200px) {
+  .heading {
+    font-size: 3rem;
+  }
   header {
     position: static;
     margin-bottom: 2rem;
