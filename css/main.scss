@@ -20,6 +20,7 @@ $black: #444444;
 $large-padding: 3rem;
 $medium-padding: 2rem;
 $normal-padding: 1rem;
+$line-height: 1.8rem;
 
 // main content width for big screen
 $main-width: 75%;
@@ -83,6 +84,7 @@ $nav-width: 25%;
         text-align: center;
         color: $grey-light;
         margin-top: $normal-padding;
+        line-height: $line-height;
     }
 
     .poster-btn-name {
@@ -205,9 +207,101 @@ header {
     visibility: visible;
 }
 
+.news-letter {
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/new-letter-bg.svg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .news-letter-title {
+        font-size: $big-heading-sm;
+        color: white;
+    }
+
+    .news-letter-sub-title {
+        font-size: $card-title;
+        color: $primary-color-light;
+        width: 90%;
+        margin-top: $normal-padding;
+        margin-bottom: $large-padding;
+        line-height: $line-height;
+    }
+
+    .news-letter-email {
+        position: relative;
+        width: 80%;
+        max-width: 400px;
+        height: 45px;
+    }
+
+    .email-input {
+        width: 100%;
+        height: 100%;
+        font-size: $nav-links;
+        color: white;
+        border: none;
+        background-color: $primary-color-light;
+        padding: 0 9rem 0 2rem;
+        border-radius: 100rem;
+    }
+    
+    .email-input::placeholder {
+        color: $primary-color-light + $grey-dark;
+    }
+    
+    .subscribe-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        font-weight: bold;
+        font-size: $nav-links;
+        border-radius: 100rem;
+        border: 1px solid white;
+        background-color: white;
+        padding: 0 1.5rem;
+        color: $primary-color;
+        transition: 300ms ease-out;
+    }
+
+    .subscribe-btn:active {
+        transform: scale(.9);
+    }
+}
+
+footer {
+    padding: $large-padding 0;
+    color: $grey-dark;
+    text-align: center;
+    line-height: 1.8rem;
+
+    .footer-text {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: $normal-padding;
+    }
+}
+
 @media (min-width: 576px) {
     .logo {
         width: 30px;
+    }
+
+    footer {
+        padding: $large-padding*2 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .news-letter {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -231,5 +325,12 @@ header {
 
     .left-main {
         width: $main-width;
+    }
+
+    .news-letter {
+        .subscribe-btn:hover {
+            color: white;
+            background-color: $primary-color;
+        }
     }
 }
