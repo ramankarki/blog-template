@@ -52,7 +52,7 @@ $nav-width: 23%;
     opacity: .8;
 }
 
-@mixin poster($width, $height, $image-width) {
+@mixin poster($width, $height, $image-width, $poster-btn-margin) {
     position: relative;
     width: $width;
     height: $height;
@@ -89,7 +89,7 @@ $nav-width: 23%;
         margin: auto;
         position: absolute;
         left: 50%;
-        bottom: $normal-padding;
+        bottom: $poster-btn-margin;
         transform: translateX(-50%);
         display: flex;
         justify-content: space-between;
