@@ -1,4 +1,4 @@
-@import "main";
+@import "../main";
 
 // alternate for carousel slider for small screen < 576px
 .welcome-poster {
@@ -80,7 +80,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 99;
+        z-index: 97;
         width: 60px;
         filter: invert(50%);
         opacity: .8;

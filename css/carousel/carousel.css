@@ -50,8 +50,8 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 98;
   padding: 1rem 0;
+  z-index: 98;
 }
 
 .header-content {
@@ -154,7 +154,7 @@ header {
   color: white;
   border: none;
   background-color: #7833c2;
-  padding: 0 9rem 0 1.5rem;
+  padding: 0 9rem 0 2rem;
   border-radius: 100rem;
 }
 
@@ -175,6 +175,7 @@ header {
 }
 
 .news-letter .subscribe-btn {
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
@@ -186,10 +187,17 @@ header {
   background-color: white;
   padding: 0 1.5rem;
   color: #581B98;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.news-letter .subscribe-btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 footer {
-  padding: 6rem 0;
+  padding: 3rem 0;
   color: #A7A7A7;
   text-align: center;
   line-height: 1.8rem;
@@ -204,6 +212,9 @@ footer .footer-text {
 @media (min-width: 576px) {
   .logo {
     width: 30px;
+  }
+  footer {
+    padding: 6rem 0;
   }
 }
 
@@ -230,6 +241,10 @@ footer .footer-text {
   }
   .left-main {
     width: 75%;
+  }
+  .news-letter .subscribe-btn:hover {
+    color: white;
+    background-color: #581B98;
   }
 }
 
@@ -459,7 +474,7 @@ footer .footer-text {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 99;
+    z-index: 97;
     width: 60px;
     -webkit-filter: invert(50%);
             filter: invert(50%);
