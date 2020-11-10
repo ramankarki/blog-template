@@ -1,4 +1,4 @@
-@import "main";
+@import "../main";
 
 // fixed main container
 // position absolute in small screen < 1200px
@@ -156,7 +156,8 @@ form {
     }
 
     .aside-content {
-        padding: $medium-padding $medium-padding + $normal-padding;
+        padding: $normal-padding $medium-padding + $normal-padding;
+        padding-top: $medium-padding;
     }
 
     .fixed-right-aside::-webkit-scrollbar {
