@@ -159,8 +159,8 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 98;
     padding: $normal-padding 0;
+    z-index: 98;
 }
 
 .header-content {
@@ -193,7 +193,6 @@ header {
     width: 30%;
     background: linear-gradient(90deg, $pink, white 50%);
     margin-right: auto;
-    margin-top: .5rem;
 }
 
 .logo {
@@ -261,7 +260,7 @@ header {
         right: 0;
         height: 100%;
         font-weight: bold;
-        font-size: $nav-links;
+        font-size: $normal-padding;
         border-radius: 100rem;
         border: 1px solid white;
         background-color: white;

@@ -50,8 +50,8 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 98;
   padding: 1rem 0;
+  z-index: 98;
 }
 
 .header-content {
@@ -91,7 +91,6 @@ header {
   background: -webkit-gradient(linear, left top, right top, from(#F3558E), color-stop(50%, white));
   background: linear-gradient(90deg, #F3558E, white 50%);
   margin-right: auto;
-  margin-top: .5rem;
 }
 
 .logo {
@@ -181,7 +180,7 @@ header {
   right: 0;
   height: 100%;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1rem;
   border-radius: 100rem;
   border: 1px solid white;
   background-color: white;
