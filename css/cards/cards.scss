@@ -1,0 +1,162 @@
+@import "main";
+
+.two-column-card {
+    background-color: $grey-light;
+}
+
+.two-column-card-container {
+    padding: $large-padding 0;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: $large-padding;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    grid-column: 12 span;
+
+    .card-img {
+        height: 200px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: .3rem;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .card-indicator-btn {
+        @include card-indicator-btn($pink, $grey-light);
+        position: absolute;
+        bottom: $large-padding;
+        left: 0;
+    }
+    
+    .tech-btn {
+        @include card-indicator-btn($black, $grey-light);
+    }
+
+    .fashion-btn {
+        @include card-indicator-btn($primary-color, $grey-light);
+    }
+
+    .nature-btn {
+        @include card-indicator-btn($green, $grey-light);
+    }
+
+    .card-title {
+        font-size: $card-title;
+        color: $black;
+        margin: $normal-padding 0;
+        line-height: $line-height;
+    }
+
+    .card-date-name {
+        color: $grey-dark;
+        font-size: $date-names;
+    }
+}
+
+@media (min-width: 768px) {
+    .two-column-card-container {
+        grid-gap: 0 $large-padding;
+        padding: $large-padding + $normal-padding $normal-padding;
+    }
+
+    .card {
+        grid-column: 6 span;
+        cursor: pointer;
+
+        .card-img {
+            height: 250px;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .two-column-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.trip-poster {
+    @include poster(100%, 420px, 0, $large-padding);
+    text-align: center;
+
+    .poster-btn {
+        @include card-indicator-btn($pink, $grey-light);
+    }
+
+    .poster-title {
+        font-size: $medium;
+        color: $grey-light;
+    }
+
+    .poster-sub-title {
+        margin-top: $normal-padding;
+        font-size: $nav-links;
+        color: $grey-dark;
+        line-height: $line-height;
+    }
+}
+
+@media (min-width: 576px) {
+    .trip-poster {
+        .poster-title {
+            font-size: $big-heading-sm;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .trip-poster {
+        @include poster(100%, 500px, 0, $large-padding);
+        width: 90%;
+        margin: 0 auto;
+
+        .poster-btn {
+            @include card-indicator-btn($pink, $grey-light);
+        }
+    }
+}
+
+
+.three-column-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: $large-padding 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: $large-padding;
+
+    .card {
+        grid-column: 12 span;
+    }
+}
+
+@media (min-width: 576px) {
+    .three-column-card {
+        grid-gap: $large-padding  $medium-padding;
+
+        .card {
+            grid-column: 6 span;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .three-column-card {
+        .card {
+            grid-column: 4 span;
+        }
+    }
+}
+
