@@ -1,0 +1,169 @@
+@import "main";
+
+// fixed main container
+// position absolute in small screen < 1200px
+.fixed-right-aside {
+    background-color: white;
+    z-index: 99;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    width: 0px;
+    @include nav-transition();
+    @include box-shadow-light();
+}
+
+// width changes after hamburgur button is clicked
+.right-aside-transition {
+    width: 280px;
+}
+
+// fixed content container
+.aside-content {
+    overflow: hidden;
+    padding: $medium-padding;
+}
+
+// exit button for removing side navigation
+.exit {
+    display: block;
+    width: 30px;
+    margin: 0 .6rem $medium-padding auto;
+}
+
+// login button and icon container
+.login-btn {
+    margin-top: $normal-padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+// login button
+.login {
+    color: $primary-color-light;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: $normal-padding;
+}
+
+// login icon
+.login-icon {
+    fill: $primary-color-light;
+    width: 25px;
+    height: 30px;
+}
+
+// search input field and search icon container
+form {
+    position: relative;
+}
+
+.search-field {
+    margin: 1rem 0;
+    width: 100%;
+    background-color: $grey-light;
+    border: none;
+    border-radius: 100rem;
+    font-size: $nav-links;
+    padding: .5rem 2.5rem .5rem 1rem;
+}
+
+.search-field:focus {
+    @include box-shadow-light();
+}
+
+.search-field::placeholder {
+    color: $grey-dark;
+}
+
+// saerch icon inside submit button
+.submit {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: .7rem;
+    cursor: pointer;
+}
+
+// navigation buttons
+.nav-item {
+    display: block;
+    color: $grey-dark;
+    text-decoration: none;
+    font-size: $nav-links;
+    margin: .8rem 0 .8rem 1rem;
+}
+
+// for underline transition
+.nav-item::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: $grey-dark;
+    @include nav-transition();
+    margin: .5rem 0;
+}
+
+.nav-item:hover::after {
+    width: 60px;
+}
+
+// active navigation button
+.active-nav {
+    color: $primary-color;
+    font-weight: bold;
+}
+
+// hr line with light grey color
+.nav-break {
+    background-color: $grey-light;
+    border: none;
+    height: 1px;
+}
+
+.social-links {
+    img:nth-child(1),
+    img:nth-child(3) {
+        width: 60px;
+    }
+    img:nth-child(2) {
+        width: 30px;
+    }
+
+    img {
+        margin: .5rem;
+        cursor: pointer;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    // position fixed in big screen
+    .fixed-right-aside {
+        width: $nav-width;
+        position: fixed;
+        box-shadow: none;
+    }
+
+    .aside-content {
+        padding: $medium-padding $medium-padding + $normal-padding;
+    }
+
+    .fixed-right-aside::-webkit-scrollbar {
+        display: none;
+    }
+
+    .exit {
+        display: none;
+    }
+}
