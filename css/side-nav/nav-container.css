@@ -94,6 +94,82 @@ header {
   margin-left: auto;
 }
 
+.jumbotron {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.jumbo-image {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.jumbo-heading {
+  font-family: "Teko", "PT-sans", sans-serif;
+  font-size: 3.1rem;
+  color: #581B98;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.jumbo-heading::before,
+.jumbo-heading::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30%;
+}
+
+.jumbo-heading::before {
+  background-image: -webkit-gradient(linear, left top, right top, from(#F3558E), to(white));
+  background-image: linear-gradient(90deg, #F3558E, white);
+}
+
+.jumbo-heading::after {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#F3558E));
+  background-image: linear-gradient(90deg, white, #F3558E);
+  margin-left: auto;
+}
+
+.jumbo-text {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: #A7A7A7;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.get-started-btn {
+  background-color: #581B98;
+  color: white;
+  border: 1px solid #581B98;
+  font-size: 14px;
+  border-radius: 100rem;
+  padding: .6rem 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.get-started-btn:hover {
+  color: #581B98;
+  background-color: white;
+}
+
+.get-started-btn:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .news-letter {
   width: 100%;
   height: 400px;
@@ -133,7 +209,7 @@ header {
   position: relative;
   width: 80%;
   max-width: 400px;
-  height: 45px;
+  height: 40px;
 }
 
 .news-letter .email-input {
@@ -198,6 +274,11 @@ footer .footer-text {
   margin-top: 1rem;
 }
 
+.footer-links .footer-link {
+  color: #A7A7A7;
+  text-decoration: none;
+}
+
 @media (min-width: 576px) {
   .logo {
     width: 30px;
@@ -217,10 +298,7 @@ footer .footer-text {
 @media (min-width: 1200px) {
   header {
     position: static;
-    margin-bottom: 2rem;
-  }
-  .header-content {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .hamburgur {
     visibility: hidden;
@@ -346,6 +424,11 @@ footer .footer-text {
   font-weight: bold;
 }
 
+.more-topics {
+  color: #F3558E;
+  text-decoration: underline;
+}
+
 .nav-break {
   background-color: #F3F3F3;
   border: none;
@@ -364,7 +447,7 @@ footer .footer-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .social-links img:nth-child(1),

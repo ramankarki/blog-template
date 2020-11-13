@@ -105,6 +105,11 @@
     font-weight: bold;
 }
 
+.more-topics {
+    color: $pink;
+    text-decoration: underline;
+}
+
 // hr line with light grey color
 .nav-break {
     background-color: $grey-light;
@@ -129,7 +134,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: $normal-padding;
+    margin-top: $medium-padding - .5rem;
 }
 
 @media (min-width: 1200px) {
