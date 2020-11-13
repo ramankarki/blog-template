@@ -10,6 +10,11 @@
 body, html {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+.stop-scrolling {
+  overflow: hidden;
 }
 
 body {
@@ -63,14 +68,22 @@ header {
           align-items: center;
 }
 
-.heading {
-  font-size: 1rem;
+.blog-template {
+  font-size: 1.2rem;
   color: #581B98;
+  width: 90%;
+  margin-left: .85rem;
 }
 
 .logo {
   width: 20px;
+  height: 40px;
   cursor: pointer;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .hamburgur {
@@ -78,6 +91,83 @@ header {
   background-color: rgba(255, 255, 255, 0);
   visibility: visible;
   width: 30px;
+  margin-left: auto;
+}
+
+.jumbotron {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.jumbo-image {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.jumbo-heading {
+  font-family: "Teko", "PT-sans", sans-serif;
+  font-size: 3rem;
+  color: #581B98;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.jumbo-heading::before,
+.jumbo-heading::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30%;
+}
+
+.jumbo-heading::before {
+  background-image: -webkit-gradient(linear, left top, right top, from(#F3558E), to(white));
+  background-image: linear-gradient(90deg, #F3558E, white);
+}
+
+.jumbo-heading::after {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#F3558E));
+  background-image: linear-gradient(90deg, white, #F3558E);
+  margin-left: auto;
+}
+
+.jumbo-text {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: #A7A7A7;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.get-started-btn {
+  background-color: #581B98;
+  color: white;
+  border: 1px solid #581B98;
+  font-size: 14px;
+  border-radius: 100rem;
+  padding: .6rem 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.get-started-btn:hover {
+  color: #581B98;
+  background-color: white;
+}
+
+.get-started-btn:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .news-letter {
@@ -118,8 +208,8 @@ header {
 .news-letter .news-letter-email {
   position: relative;
   width: 80%;
-  max-width: 400px;
-  height: 45px;
+  max-width: 370px;
+  height: 40px;
 }
 
 .news-letter .email-input {
@@ -167,8 +257,8 @@ header {
 }
 
 .news-letter .subscribe-btn:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 footer {
@@ -182,6 +272,23 @@ footer .footer-text {
   width: 90%;
   margin: 0 auto;
   margin-top: 1rem;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+.footer-links .footer-link {
+  color: #A7A7A7;
+  text-decoration: underline;
+  margin-top: .5rem;
 }
 
 @media (min-width: 576px) {
@@ -201,15 +308,12 @@ footer .footer-text {
 }
 
 @media (min-width: 1200px) {
-  .heading {
-    font-size: 2.6rem;
-  }
   header {
     position: static;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
-  .header-content {
-    margin-top: 2rem;
+  .hamburgur {
+    visibility: hidden;
   }
   .left-main {
     width: 80%;
