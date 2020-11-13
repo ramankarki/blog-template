@@ -1,5 +1,5 @@
 // font sizes
-$big-heading: 4rem;
+$big-heading: 3rem;
 $big-heading-sm: 2.6rem;
 $medium: 1.8rem;
 $card-title: 1.2rem;
@@ -216,7 +216,7 @@ header {
 
 .jumbo-heading {
     font-family: "Teko", "PT-sans", sans-serif;
-    font-size: $big-heading-sm + .5rem;
+    font-size: $big-heading;
     color: $primary-color;
     width: max-content;
     margin: 0 auto;
@@ -300,8 +300,8 @@ header {
     .news-letter-email {
         position: relative;
         width: 80%;
-        max-width: 400px;
-        height: 45px;
+        max-width: 370px;
+        height: 40px;
     }
 
     .email-input {
@@ -350,6 +350,17 @@ footer {
         width: 90%;
         margin: 0 auto;
         margin-top: $normal-padding;
+    }
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: $normal-padding;
+    .footer-link {
+        color: $grey-dark;
+        text-decoration: underline;
+        margin-top: .5rem;
     }
 }
 
