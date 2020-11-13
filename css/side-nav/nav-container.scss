@@ -48,11 +48,6 @@
     transition: 300ms ease-out;
 }
 
-.get-started-btn:hover {
-    color: $primary-color;
-    background-color: white;
-}
-
 .get-started-btn:active {
     transform: scale(.8);
 }
@@ -81,22 +76,13 @@
     color: $grey-dark;
     text-decoration: none;
     font-size: $nav-links;
-    margin: .5rem 0;
+    padding: .3rem 0;
+    margin: .4rem 0;
+    transition: margin 200ms ease-out;
 }
 
-// for underline transition
-.nav-item::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    background-color: $grey-dark;
-    @include nav-transition();
-    margin: .5rem 0;
-}
-
-.nav-item:hover::after {
-    width: 60px;
+.nav-item:hover {
+    margin-left: $normal-padding;
 }
 
 // active navigation button
@@ -134,7 +120,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: $medium-padding - .5rem;
+    margin-top: $large-padding - .5rem;
+}
+
+@media (min-width: 992px) {
+    .get-started-btn:hover {
+        color: $primary-color;
+        background-color: white;
+    }
+
 }
 
 @media (min-width: 1200px) {
