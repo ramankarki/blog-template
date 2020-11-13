@@ -224,19 +224,19 @@ header {
 }
 
 .news-letter .email-input::-webkit-input-placeholder {
-  color: #ffdaff;
+  color: #ae61ff;
 }
 
 .news-letter .email-input:-ms-input-placeholder {
-  color: #ffdaff;
+  color: #ae61ff;
 }
 
 .news-letter .email-input::-ms-input-placeholder {
-  color: #ffdaff;
+  color: #ae61ff;
 }
 
 .news-letter .email-input::placeholder {
-  color: #ffdaff;
+  color: #ae61ff;
 }
 
 .news-letter .subscribe-btn {

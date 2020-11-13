@@ -13,6 +13,7 @@ $grey-dark: #A7A7A7;
 $grey-light: #F3F3F3;
 $primary-color: #581B98;
 $primary-color-light: #7833c2;
+$email-place-holder: #ae61ff;
 $pink: #F3558E;
 $green: #3CA855;
 $black: #444444;
@@ -316,7 +317,7 @@ header {
     }
     
     .email-input::placeholder {
-        color: $primary-color-light + $grey-dark;
+        color: $email-place-holder;
     }
     
     .subscribe-btn {
