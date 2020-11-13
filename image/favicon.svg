@@ -13,7 +13,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="favicon.svg">
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="C:\Users\raman\Documents\blog-template\image\favicon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="35.846885"
-     inkscape:cx="4.9747899"
-     inkscape:cy="8"
+     inkscape:zoom="25.347575"
+     inkscape:cx="9.5841676"
+     inkscape:cy="8.8425069"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -38,7 +41,8 @@
      inkscape:window-height="715"
      inkscape:window-x="-8"
      inkscape:window-y="22"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -47,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,27 +59,31 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-size:6.3717px;line-height:1.25;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';fill:#581b98;fill-opacity:1;stroke-width:0.159381;stroke-miterlimit:4;stroke-dasharray:none"
-       x="0.11818597"
-       y="5.1467347"
-       id="text9"><tspan
-         sodipodi:role="line"
-         id="tspan7"
+    <g
+       id="g15"
+       transform="translate(-0.12836646,0.03173427)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3717px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#581b98;fill-opacity:1;stroke-width:0.159381;stroke-miterlimit:4;stroke-dasharray:none"
          x="0.11818597"
          y="5.1467347"
-         style="fill:#581b98;fill-opacity:1;stroke-width:0.159381;stroke-miterlimit:4;stroke-dasharray:none">B</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;line-height:1.25;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f3558e;fill-opacity:1;stroke-width:0.123043"
-       x="3.8000922"
-       y="2.9892395"
-       id="text13"><tspan
-         sodipodi:role="line"
-         id="tspan11"
+         id="text9"><tspan
+           sodipodi:role="line"
+           id="tspan7"
+           x="0.11818597"
+           y="5.1467347"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3717px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#581b98;fill-opacity:1;stroke-width:0.159381;stroke-miterlimit:4;stroke-dasharray:none">B</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f3558e;fill-opacity:1;stroke-width:0.123043"
          x="3.8000922"
          y="2.9892395"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f3558e;fill-opacity:1;stroke-width:0.123043">T</tspan></text>
+         id="text13"><tspan
+           sodipodi:role="line"
+           x="3.8000922"
+           y="2.9892395"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.28112px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f3558e;fill-opacity:1;stroke-width:0.123043"
+           id="tspan12">T</tspan></text>
+    </g>
   </g>
 </svg>
