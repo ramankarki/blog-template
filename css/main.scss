@@ -1,4 +1,5 @@
 // font sizes
+$lg-big-heading: 4.5rem;
 $big-heading: 3rem;
 $big-heading-sm: 2.6rem;
 $medium: 1.8rem;
@@ -178,7 +179,7 @@ header {
     font-size: $card-title;
     color: $primary-color;
     width: 90%;
-    margin-left: .85rem;
+    margin-left: $normal-padding;
 }
 
 .logo {
@@ -205,13 +206,17 @@ header {
     width: 90%;
     margin: 0 auto;
     padding-top: $medium-padding;
-    padding-bottom: $large-padding;
+    padding-bottom: $large-padding + $medium-padding;
 }
 
 .jumbo-image {
     width: 50%;
     margin: 0 auto;
     margin-top: $large-padding;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .jumbo-heading {
@@ -261,11 +266,6 @@ header {
     display: block;
     cursor: pointer;
     transition: 300ms ease-out;
-}
-
-.get-started-btn:hover {
-    color: $primary-color;
-    background-color: white;
 }
 
 .get-started-btn:active {
@@ -341,7 +341,7 @@ header {
 }
 
 footer {
-    padding: $large-padding 0;
+    padding: $medium-padding 0;
     color: $grey-dark;
     text-align: center;
     line-height: 1.8rem;
@@ -370,7 +370,45 @@ footer {
     }
 
     footer {
-        padding: $large-padding*2 0;
+        padding: $large-padding 0;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: $medium-padding;
+        .footer-link {
+            margin: 0 .5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding: $large-padding + $normal-padding $large-padding;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: $large-padding;
+    }
+    
+    .jumbo-content,
+    .jumbo-image {
+        grid-column: 6 span;
+    }
+
+    .jumbo-heading,
+    .jumbo-btn {
+        margin: 0;
+    }
+    
+    .jumbo-text {
+        text-align: left;
+    }
+    
+    .jumbo-image {
+        margin-top: 0;
+        width: unset;
+        max-width: 350px;
     }
 }
 
@@ -378,6 +416,25 @@ footer {
     .news-letter {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .footer-links {
+        .footer-link {
+            text-decoration: none;
+        }
+        
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .jumbo-heading {
+        font-size: $lg-big-heading;
+    }
+
+    .get-started-btn:hover {
+        color: $primary-color;
+        background-color: white;
     }
 }
 

@@ -72,7 +72,7 @@ header {
   font-size: 1.2rem;
   color: #581B98;
   width: 90%;
-  margin-left: .85rem;
+  margin-left: 1rem;
 }
 
 .logo {
@@ -98,13 +98,18 @@ header {
   width: 90%;
   margin: 0 auto;
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .jumbo-image {
   width: 50%;
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+.jumbo-image img {
+  width: 100%;
+  height: auto;
 }
 
 .jumbo-heading {
@@ -158,11 +163,6 @@ header {
   cursor: pointer;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
-}
-
-.get-started-btn:hover {
-  color: #581B98;
-  background-color: white;
 }
 
 .get-started-btn:active {
@@ -262,7 +262,7 @@ header {
 }
 
 footer {
-  padding: 3rem 0;
+  padding: 2rem 0;
   color: #A7A7A7;
   text-align: center;
   line-height: 1.8rem;
@@ -296,7 +296,47 @@ footer .footer-text {
     width: 30px;
   }
   footer {
-    padding: 6rem 0;
+    padding: 3rem 0;
+  }
+  .footer-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+  .footer-links .footer-link {
+    margin: 0 .5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding: 4rem 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3rem;
+  }
+  .jumbo-content,
+  .jumbo-image {
+    grid-column: 6 span;
+  }
+  .jumbo-heading,
+  .jumbo-btn {
+    margin: 0;
+  }
+  .jumbo-text {
+    text-align: left;
+  }
+  .jumbo-image {
+    margin-top: 0;
+    width: unset;
+    max-width: 350px;
   }
 }
 
@@ -304,6 +344,19 @@ footer .footer-text {
   .news-letter {
     width: 90%;
     margin: 0 auto;
+  }
+  .footer-links .footer-link {
+    text-decoration: none;
+  }
+  .footer-links .footer-link:hover {
+    text-decoration: underline;
+  }
+  .jumbo-heading {
+    font-size: 4.5rem;
+  }
+  .get-started-btn:hover {
+    color: #581B98;
+    background-color: white;
   }
 }
 
